@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="BDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qf8-La-NRc"/>
+                        <viewControllerLayoutGuide type="bottom" id="AW4-jY-rTb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7aA-aG-k4S">
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diV-D4-lv0">
+                                <rect key="frame" x="166" y="352" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6S-dA-t2K">
+                                <rect key="frame" x="166" y="381" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iu5-VZ-ER0">
+                                <rect key="frame" x="166" y="410" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U6S-dA-t2K" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8b1-Ry-6iZ"/>
+                            <constraint firstItem="iu5-VZ-ER0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="8rf-dp-F0N"/>
+                            <constraint firstItem="7aA-aG-k4S" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="Dtg-RW-bf8"/>
+                            <constraint firstItem="iu5-VZ-ER0" firstAttribute="top" secondItem="U6S-dA-t2K" secondAttribute="bottom" constant="8" id="KDj-sf-AO5"/>
+                            <constraint firstItem="7aA-aG-k4S" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="KQq-7g-4sX"/>
+                            <constraint firstItem="U6S-dA-t2K" firstAttribute="top" secondItem="diV-D4-lv0" secondAttribute="bottom" constant="8" id="VMa-3z-paM"/>
+                            <constraint firstItem="diV-D4-lv0" firstAttribute="top" secondItem="7aA-aG-k4S" secondAttribute="bottom" constant="8" id="hpm-Fg-juH"/>
+                            <constraint firstItem="diV-D4-lv0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ucV-kt-q8w"/>
+                            <constraint firstItem="7aA-aG-k4S" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="vPZ-Ja-q5f"/>
+                            <constraint firstItem="7aA-aG-k4S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="veN-j8-2oF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beaconLabel" destination="7aA-aG-k4S" id="Dn5-pU-S3o"/>
+                        <outlet property="majorLabel" destination="diV-D4-lv0" id="WRs-c1-YCc"/>
+                        <outlet property="minorLabel" destination="U6S-dA-t2K" id="hsm-O9-qOB"/>
+                        <outlet property="powerLabel" destination="iu5-VZ-ER0" id="ulE-OI-Ekz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.5" y="31.5"/>
+        </scene>
+    </scenes>
+</document>
