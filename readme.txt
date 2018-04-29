@@ -1,4 +1,4 @@
-[BackgroundBeaconDemo](http://AppHands.com)
+Background Beacon Demo
 =================
 
 Created by Randy Edmonds from AppHands.com
