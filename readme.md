@@ -11,7 +11,7 @@ Configure a Raspberry Pi as a bluetooth beacon using the following commands:
 
 `sudo hcitool hci0 leadv 3`
 
-This app will scan for bluetooth devices that have a Service UUID of 0x1E71 (bytes 8 and 9 in the above hcitool command).
+This app will scan for bluetooth devices that have a Service UUID of 0x1E71 (bytes 7 and 8 in the above hcitool command).
 
 When a bluetooth device is discovered:
 * When in the background, the app will display a local notification.
